@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,4 +8,6 @@ import { CommonModule } from '@angular/common';
   template: ` <p>housing-location works!</p> `,
   styleUrls: ['./housing-location.component.css'],
 })
-export class HousingLocationComponent {}
+export class HousingLocationComponent {
+  @Input() housingLocation!: HousingLocationComponent;
+}
