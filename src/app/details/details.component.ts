@@ -67,6 +67,8 @@ export class DetailsComponent {
       this.housingService.getHousingLocationById(housingLocationId);
   }
 
+  //  to prevent default  (click)="filterResults(filter.value); $event.preventDefault()"
+
   submitApplication() {
     this.housingService.submitApplication(
       this.applyForm.value.firstName ?? '',
